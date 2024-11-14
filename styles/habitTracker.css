@@ -1,13 +1,18 @@
+/* Prevent scrolling and overflow on both body and html */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ensure both elements fill the full viewport height */
+    overflow: hidden; /* Prevent scrolling on both body and html */
+}
+
 /* Body Styling */
 body {
-    margin: 0;
-    height: 100vh;
     background-color: black; /* Set the background color to black or something darker */
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden; /* Prevents overflow */
-
 }
 
 /* Shapes Styling */
@@ -33,7 +38,7 @@ body {
 
 .circle1 {
 	background-color: rgba(48, 112, 217, 0.4); /* White circles with some transparency */
-    box-shadow: 0 0 15px rgba(48, 112, 217, 0.5); /* Optional glow effect */
+    box-shadow: 0 0 15px rgba(48, 112, 217, 0.4); /* Optional glow effect */
     top: -20%;
     left: -10%;
     animation-delay: 0s;
@@ -42,7 +47,7 @@ body {
 
 .circle2 {
 		background-color: rgba(48, 112, 217, 0.4); /* White circles with some transparency */
-    box-shadow: 0 0 15px rgba(48, 112, 217, 0.5); /* Optional glow effect */
+    box-shadow: 0 0 15px rgba(48, 112, 217, 1); /* Optional glow effect */
     top: 80%;
     left: 70%;
     animation-delay: 2s;
@@ -77,7 +82,7 @@ body {
 		backdrop-filter: blur(72.5px);
 		-webkit-backdrop-filter: blur(72.5px);
 
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for the glass effect */
     z-index: 1; /* Ensures the content is in front of the shapes */
