@@ -1,0 +1,153 @@
+/* Body Styling */
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: black; /* Set the background color to black or something darker */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Prevents overflow */
+
+}
+
+/* Shapes Styling */
+#Shapes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1; /* Places the shapes behind the glass */
+}
+
+.circle {
+    width: 550px;
+    height: 550px;
+    border-radius: 50%;
+    position: absolute;
+    animation: glow 3s infinite ease-in-out;
+}
+
+.circle1 {
+	background-color: rgba(48, 112, 217, 0.4); /* White circles with some transparency */
+    box-shadow: 0 0 15px rgba(48, 112, 217, 0.5); /* Optional glow effect */
+    top: -20%;
+    left: -10%;
+    animation-delay: 0s;
+}
+
+
+.circle2 {
+		background-color: rgba(48, 112, 217, 0.4); /* White circles with some transparency */
+    box-shadow: 0 0 15px rgba(48, 112, 217, 0.5); /* Optional glow effect */
+    top: 80%;
+    left: 70%;
+    animation-delay: 2s;
+}
+
+/* Animation for glowing circles */
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+    }
+    50% {
+        box-shadow: 0 0 90px rgba(255, 255, 255, 0.8);
+    }
+    80% {
+        box-shadow: 0 0 40px rgba(255, 255, 255, 0.8);
+    }
+    100% {
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+    }
+}
+
+/* Glassy Effect and Main Content Styling */
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%; /* Take up all available space */
+/* From https://css.glass */
+		background: rgba(9, 59, 83, 0.27);
+		backdrop-filter: blur(72.5px);
+		-webkit-backdrop-filter: blur(72.5px);
+
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for the glass effect */
+    z-index: 1; /* Ensures the content is in front of the shapes */
+    overflow: auto; /* Allow scroll if content overflows */
+}
+
+#inputField
+{
+	margin: 5px;
+	padding:20px;
+	height:7%;
+	width: 70%;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#input
+{
+	height:80%;
+	width:80%;
+	padding:0.1;
+		/* From https://css.glass */
+	background: rgba(9, 59, 83, 0.3);
+	border-radius: 5px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5.4px);
+	-webkit-backdrop-filter: blur(5.4px);
+	border: 1px solid rgba(9, 59, 83, 0.15);
+	font-size: 20px;
+	color: #87CEEB;
+	outline: none;
+	transition:border 0.9s ease-in;
+}
+
+#input:hover
+{
+	border: 2px solid rgba(12, 83, 117, 0.15);
+
+}
+
+#add
+{
+	height:90%;
+	width:20%;
+	margin-left: 2%;
+	background-color:rgba(9, 59, 83, 1);
+	border: none;
+	border-radius:5px;
+	color: #87CEEB;
+	font-size: 20px;
+	transition: background-color 0.3s ease-in-out;
+
+}
+
+#add:hover
+{
+	background-color:rgba(12, 80, 112, 1);
+}
+
+#checkList
+{
+	height:auto;
+	width:70%;
+		/* From https://css.glass */
+	background: rgba(9, 59, 83, 0.3);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5.4px);
+	-webkit-backdrop-filter: blur(5.4px);
+	border: 1px solid rgba(9, 59, 83, 0.15);
+}
+

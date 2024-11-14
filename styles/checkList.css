@@ -1,0 +1,79 @@
+#mainList {
+	height:100%;
+	list-style-type: none;
+	padding-left: 0; /* Removes left padding from the list */
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction:column;
+}
+
+#mainList div {
+  height: 40px; /* Keeps the height fixed */
+  width: 95%; /* Makes the div take up the full width of the list */
+  display: flex;
+  background: rgba(9, 59, 83, 0.3);
+  border-radius: 5px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.4px);
+  -webkit-backdrop-filter: blur(5.4px);
+  border: 1px solid rgba(9, 59, 83, 0.15);
+  margin-bottom: 10px; /* Adds space between each div */
+}
+
+#mainList li {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+#mainList input[type="checkbox"] {
+  margin-right: 10px; /* Space between checkbox and label */
+  margin-left: 10px;
+  background-color: transparent; /* Make background transparent */
+  background:transparent;
+  color: black; /* Checkbox color */
+  accent-color: green; /* Change the checkbox tick color */
+  height: 20px; /* Make checkbox bigger */
+  width: 20px; /* Adjust width to match height */
+  border: 2px solid black; /* Add border to make the checkbox visible */
+  border-radius: 5px; /* Optional: gives rounded corners to the checkbox */
+  opacity: 0.5; /* Optional: make the checkbox slightly transparent */
+  transform: scale(1.5); /* Makes the checkbox bigger */
+}
+
+#mainList label
+{
+  font-size: 20px;
+}
+
+#mainList button
+{
+  color: #00c4ff;
+}
+
+#mainList button:hover
+{
+  box-shadow:lightgray 1px;
+  color: aqua;
+}
+
+#mainList img {
+  height: 20px;
+  width: 20px;
+  transition: transform 0.3s cubic-bezier(1,-0.15, 0, 2.17), filter 0.3s cubic-bezier(1,-0.15, 0, 2.17); /* Add transition for color change */
+  transform-origin: center;
+  filter: hue-rotate(180deg); /* Apply a hue rotation to change the color */
+}
+
+#mainList img:hover {
+  transform: scale(1.25);
+  filter: hue-rotate(0deg); /* Reset hue on hover, or apply another color shift */
+}
+
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
