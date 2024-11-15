@@ -53,6 +53,26 @@ body {
     animation-delay: 2s;
 }
 
+@media (max-width: 768px) {
+	.circle {
+        width: 300px; /* Adjust size for smaller screens */
+        height: 300px;
+        box-shadow: 0 0 10px rgba(48, 112, 217, 0.4);
+    }
+	.circle1 {
+	    transform: translate(-50%, -50%);
+	    top: 10%;
+	    left: 10%;
+	}
+	.circle2 {
+	    transform: translate(-50%, -50%);
+	    top: 90%;
+	    left: 90%;
+	}
+
+}
+
+
 /* Animation for glowing circles */
 @keyframes glow {
     0% {
